@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "product_name": "Solid Green Cotton t-shirt",
+    "gender": "Male",
+    "product_price": 11,
+    "discount_percent": 5,
+    "image": "https://akashbucket1.s3.us-east-2.amazonaws.com/anthem/T1.jpg"
+  },
+  {
+    "id": 2,
+    "product_name": "Pink Rainbow Print Girls Tee",
+    "gender": "Female",
+    "product_price": 17,
+    "discount_percent": 2,
+    "image": "https://akashbucket1.s3.us-east-2.amazonaws.com/anthem/T4.jpg"
+  },
+  {
+    "id": 3,
+    "product_name": "Blue Flower Pattern Shirt",
+    "gender": "Male",
+    "product_price": 9,
+    "discount_percent": 10,
+    "image": "https://akashbucket1.s3.us-east-2.amazonaws.com/anthem/T3.jpg"
+  },
+  {
+    "id": 4,
+    "product_name": "Off White Cotton Pant",
+    "gender": "Female",
+    "product_price": 13,
+    "discount_percent": 6,
+    "image":"https://akashbucket1.s3.us-east-2.amazonaws.com/anthem/T2.jpg"
+  }
+]

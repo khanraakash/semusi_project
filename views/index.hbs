@@ -1,0 +1,43 @@
+
+<div class="container" style="text-align: center">
+<h1>{{title}}</h1>
+</div>
+<div class="container mt-5 " style="margin-bottom: 50px">
+    <div class="text-right">
+        <a href="/cart" type="button" class="btn btn-success"> Proceed to Cart {{# if session.cart.totalItems }}
+            <span>({{session.cart.totalItems}})</span>
+        {{/if}}</a>
+    </div>
+
+</div>
+{{# each products }}
+    <div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="caption">
+                    <div class="col-md-4" >
+                      <img src={{this.image}} width="50px" height="50px" />
+                    <h3>{{ this.product_name }}</h3></div>
+                    <div class="col-md-4" style="padding-top: 70px;">
+                        <p >{{this.gender}}</p>
+                    </div>
+                    <div class=" clearfix" style="padding-top: 70px;">
+                        <div style="padding-left: 850px"> {{ this.product_price }} $</div>
+                    </div>
+                    <div class=" clearfix" >
+                        <a href="/add/{{ this.id }}" class="btn btn-default pull-right"  role="button"> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{{/each}}
+
+
+
+
+
+

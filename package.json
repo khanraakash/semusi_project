@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-shopping-cart",
+  "version": "1.0.0",
+  "author": "Harsh Agrahari",
+  "email": "iharshagrahari@gmail.com",
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.3",
+    "hbs": "~4.0.1"
+   },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
