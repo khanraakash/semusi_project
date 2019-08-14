@@ -5,8 +5,7 @@ var fs = require('fs');
 var Shopbag = require('../cart/cart');
 var products = JSON.parse(fs.readFileSync('./src/products.json', 'utf8'));
 
-router.get('/', function (req, res, next) {
-    var productId = products && products[0].id;
+router.get('/', function (req, res) {
 
     res.render('index',
         {
@@ -17,11 +16,11 @@ router.get('/', function (req, res, next) {
     );
 });
 
-router.get('/add/:id', function(req, res, next) {
+router.get('/add/:id', function (req, res) {
 
     var productId = req.params.id;
     var cart = new Shopbag(req.session.cart ? req.session.cart : {});
-    var product = products.filter(function(item) {
+    var product = products.filter(function (item) {
         return item.id == productId;
     });
     cart.add(product[0], productId);
@@ -30,21 +29,11 @@ router.get('/add/:id', function(req, res, next) {
 
 });
 
-router.get('/cart', function(req, res, next) {
-    if (!req.session.cart) {
-        return res.render('cart', {
-            products: null
-        });
-    }
-    var cart = new Shopbag(req.session.cart);
-    res.render('cart', {
-        title: 'Semusi Shopping Cart',
-        products: cart.getItems(),
-        totalPrice: cart.totalPrice
-    });
+router.get('/cart', function (req, res) {
+    res.send("Order Placed");
 });
 
-router.get('/remove/:id', function(req, res, next) {
+router.get('/remove/:id', function (req, res) {
     var productId = req.params.id;
     var cart = new Shopbag(req.session.cart ? req.session.cart : {});
 

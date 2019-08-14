@@ -1,8 +1,8 @@
 {
   "name": "nodejs-shopping-cart",
   "version": "1.0.0",
-  "author": "Harsh Agrahari",
-  "email": "iharshagrahari@gmail.com",
+  "author": "Akash Khanra",
+  "email": "iakashkhanra@gmail.com",
   "private": false,
   "scripts": {
     "start": "node app.js"
@@ -13,7 +13,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.3",
     "hbs": "~4.0.1"
-   },
+  },
   "devDependencies": {
     "nodemon": "^1.11.0"
   }

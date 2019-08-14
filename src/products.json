@@ -13,7 +13,7 @@
     "gender": "Female",
     "product_price": 17,
     "discount_percent": 2,
-    "image": "https://akashbucket1.s3.us-east-2.amazonaws.com/anthem/T4.jpg"
+    "image": "https://akashbucket1.s3.us-east-2.amazonaws.com/anthem/T2.jpg"
   },
   {
     "id": 3,
@@ -29,6 +29,6 @@
     "gender": "Female",
     "product_price": 13,
     "discount_percent": 6,
-    "image":"https://akashbucket1.s3.us-east-2.amazonaws.com/anthem/T2.jpg"
+    "image": "https://akashbucket1.s3.us-east-2.amazonaws.com/anthem/T4.jpg"
   }
 ]
